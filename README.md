@@ -9,6 +9,6 @@ Images, colors, font, text,songs
   #f0f4f5, #d3e2e3, #b4dde0,
   #122f5e,#1c3c70,#2c4773
 - fonts
-  Fredoka, Quicksand, Oswald
+  Fredoka, Odibee Sans
 - <s>text</s>
 - songs
