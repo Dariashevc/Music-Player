@@ -1,3 +1,24 @@
-body {
-    font-family: ;
+header {
+    font-family: "Odibee Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+main {
+    font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+    font-size: 32px;
+}
+.music-player-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.music-player-list-item {
+    
 }
