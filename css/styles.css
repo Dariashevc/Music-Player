@@ -10,6 +10,8 @@ header {
     font-size: 64px;
     text-transform: uppercase;
     background-color: #0b1b3b;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 main {
     font-family: "Fredoka", sans-serif;
@@ -21,6 +23,7 @@ main {
 }
 .logo {
     color: #4b6cad;
+    margin-left: 32px;
 }
 
 .main-container {
@@ -31,12 +34,19 @@ main {
     display: flex;
     flex-wrap: wrap;
     column-gap: 64px;
-    row-gap: 32px;
+    row-gap: 64px;
 }
 .music-player-list-item-text {
     color: #b3ccff;
-    text-align: center;
+    text-align:center;
+    margin: 0;
+    
 }
 .music-player-list-item {
     
+}
+.footer-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #0b1b3b;
 }
