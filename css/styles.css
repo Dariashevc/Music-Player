@@ -35,6 +35,7 @@ a {
         background-color: #0b1b3b;
         padding-top: 16px;
         padding-bottom: 12px;
+        box-shadow: 20px 20px 50px 15px #1c3c82;
     }
 .logo {
     color: #4b6cad;
@@ -56,6 +57,7 @@ a {
 }
 .img-music-players {
     border-radius: 16px;
+    display: block;
 }
 .music-player-list-item-text {
     color: #b3ccff;
