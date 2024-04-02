@@ -1,7 +1,9 @@
 # Music-Player
 CS10 MAIN PROJECT
+# About music player
 My music player will have menu with playlists. It will have dark and light mode. when I go to the menu of the playlist, I can see all songs that I add there. When I start a song it will open a new page where I can see image of the song, song timeline and song switc buttons.
 
+# To do list 
 Images, colors, font, text,songs 
 
 - <s>images</s>
@@ -12,3 +14,5 @@ Images, colors, font, text,songs
   Fredoka, Odibee Sans
 - <s>text</s>
 - songs
+
+
