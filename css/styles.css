@@ -39,7 +39,7 @@ a {
     }
 .logo {
     color: #4b6cad;
-    margin-left: 124px;
+    margin-left: 140px;
 }
 
 .main-container {
@@ -49,11 +49,18 @@ a {
 .music-player-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 124px;
+    column-gap: 64px;
     row-gap: 64px;
     margin-left: 124px;
     margin-top: 32px;
     margin-bottom: 32px;
+}
+.music-player-list-item {
+    border-radius: 25px;
+    padding: 16px;
+}
+.music-player-list-item:hover {
+    background-color:#486aae72;
 }
 .img-music-players {
     border-radius: 16px;
