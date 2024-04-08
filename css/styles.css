@@ -36,6 +36,21 @@ a {
         padding-top: 16px;
         padding-bottom: 12px;
         box-shadow: 20px 20px 50px 15px #377aff72;
+        container: normal;
+        display: flex;
+        flex-direction: row;
+    }
+    .button {
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        display: flex;
+        margin-left: 510px;
+        margin-top: 12px;
+        background-color: rgb(240, 184, 225);
+    }
+    .button:hover {
+        background-color: rgb(212, 137, 192);
     }
 .logo {
     color: #4b6cad;
