@@ -36,6 +36,9 @@ a {
         padding-top: 16px;
         padding-bottom: 12px;
         box-shadow: 20px 20px 50px 15px #377aff72;
+        container: normal;
+        display: flex;
+        flex-direction: row;
     }
 .logo {
     color: #4b6cad;
@@ -46,16 +49,12 @@ a {
     padding-top: 32px; 
     padding-bottom: 32px;
 }
-.music-player-list {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 64px;
-    row-gap: 64px;
-    margin-left: 124px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
+
 .music-player-list-item {
+    margin-left: auto;
+    margin-right: auto;
+      margin-top: 32px;
+      margin-bottom: 32px;
     border-radius: 25px;
     padding: 16px;
 }
