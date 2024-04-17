@@ -7,7 +7,7 @@ float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 //
 color backgroundColour, darkBackground=0, whiteBackground=255; //Gray Scale, note much smaller than COLOR
 color foregroundColour;
-color white=255, yellow=#FFFF00, black=0; //Hexidecimal, see Tools / Colour Selector
+color white=255, yellow=#FFFF00, black=0, purple=#FF00FF; //Hexidecimal, see Tools / Colour Selector
 Boolean whiteMode=false;
 //
 void setup() {
@@ -51,10 +51,10 @@ void setup() {
   //if ( hour()<9 && hour()>17 ) backgroundColour = darkBackground;
   if ( whiteMode==true && hour()>=9 && hour()<=17 ) {
     backgroundColour = whiteBackground;
-    foregroundColour = #FFFFFF;
+    foregroundColour = black;
   } else {
     backgroundColour = darkBackground;
-    foregroundColour = yellow; //Note: if(hour()<9&&hour()>17) 
+    foregroundColour = yellow; //Note: if(hour()<9&&hour()>17)
     if ( hour()>=9 && hour()<=17 ) foregroundColour = white;
   }
   //
@@ -63,17 +63,25 @@ void setup() {
 void draw() {
   background(backgroundColour);
   fill(foregroundColour);
+  //
+  //Quit Button
+  fill(purple);
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) fill(yellow);
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
+  fill(foregroundColour); //Resetting the Defaults
+  println(mouseX, mouseY);
+  //
 } //End draw
 //
-void keyPressed() {
- if (key == 'Q' || key=='q') exit ();
- if (key==CODED && keyCode==UP) exit();
+void keyPressed() { //Listener
+  if (key=='Q' || key=='q') exit();
+  if (key==CODED && keyCode==ESC) exit();
+  if (key=='W' || key=='w') ;
 } //End keyPressed
 //
-void mousePressed() { //quit button
-  if ( mouseX>quitButtonX mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY mouseY<quitButtonY+quitButtonWidth)
-  {
+void mousePressed() { //Listener
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight )
+  { 
     exit();
   }
 } //End mousePressed
