@@ -46,17 +46,20 @@ a {
 .main-container {
     padding-top: 32px; 
     padding-bottom: 32px;
+    
 }
 
 .music-player-list-item {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
       margin-top: 32px;
       margin-bottom: 32px;
-    border-radius: 25px;
+    border-radius: 32px;
     padding: 16px;
 }
 .music-player-list-item:hover {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
     animation-name: example;
   animation-duration:  0.5s;
   animation-fill-mode: forwards;
@@ -66,7 +69,7 @@ a {
     to {background-color: #4565a472;}
   }
 .img-music-players {
-    border-radius: 16px;
+    border-radius: 32px;
 }
 .music-player-list-item-text {
     color: #b3ccff;
