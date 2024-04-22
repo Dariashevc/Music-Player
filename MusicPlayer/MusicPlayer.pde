@@ -4,6 +4,9 @@ float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float albumCoverX, albumCoverY, albumCoverWidth, albumCoverHeight;
 float playButtonX, playButtonY, playButtonWidth, playButtonHeight;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+int size;
+PFont generalFont;
+String quit="QUIT";
 //
 color backgroundColour, darkBackground=0, whiteBackground=255; //Gray Scale, note much smaller than COLOR
 color foregroundColour;
@@ -18,6 +21,14 @@ void setup() {
   //Landscape is HARDCODED
   String displayInstructions = ( appWidth >= appHeight ) ? "Good To Go" : "Bru, turn your phun";
   println(displayInstructions);
+  //
+  //Fonts from OS (Operating System)
+  String[] fontList = PFont.list(); //To list all fonts available on OS
+  printArray(fontList); //For listing all possible fonts to choose from, then createFont
+  size = ( appWidth > appHeight ) ? appHeight : appWidth ; // Font size starts with smaller dimension
+  generalFont = createFont("Harrington", size);
+  //bottomFont = createFont("", size); //Note: more than one font allowed
+  // Tools / Create Font / Find Font / Use size field / Do not press "OK", known bug
   //
   //Population
   backgroundX = appWidth*0;
@@ -76,7 +87,18 @@ void draw() {
     fill(purple);
   }
   fill(foregroundColour); //Resetting the Defaults
+  //Quit, Text
+  fill(foregroundColour); //Ink
+  textAlign( CENTER, CENTER ); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  size = appHeight*1/23; // Var based on ratio of display
+  textFont(generalFont, size);
+  text(quit, quitButtonX+quitButtonWidth*1/7, quitButtonY+quitButtonHeight*1/7, quitButtonWidth*5/7, quitButtonHeight*5/7); //Inside rect() above
+  fill(foregroundColour); //Resetting the Defaults
+  //
+
   println(mouseX, mouseY);
+
   //
 } //End draw
 //
