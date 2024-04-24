@@ -6,7 +6,11 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 //Global Variables
-Minim minim;
+Minim minim; //creates object to access all functions
+AudioPlayer soundEffects1;
+AudioPlayer playList1; //creates "Play List" variable holding extensions WAV, AIFF, AU, SND, and MP3
+//
+
 int appWidth, appHeight;
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float albumCover1X, albumCover1Y, albumCover1Width, albumCover1Height;
@@ -25,17 +29,33 @@ color foregroundColour;
 color white=255, yellow=#FFFF00, black=0, purple=#FF00FF; //Hexidecimal, see Tools / Colour Selector
 Boolean whiteMode=false;
 //
+
+
 void setup() {
   //size(400, 500); //width, height
   fullScreen(); //displayWidth, displayHeight
   appWidth = displayWidth;
   appHeight = displayHeight;
+  
+  
   //Landscape is HARDCODED
   String displayInstructions = ( appWidth >= appHeight ) ? "Good To Go" : "Bru, turn your phun";
   println(displayInstructions);
   //
+  
+  
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
+  String extension = ".mp3";
+  String quitButtonSound = "CarDoorClosing";
+  String pathwaySoundEffects = "../Audio/SoundEffect/"; //Relative Path
+  //println ( pathwaySoundEffects+quitButtonSound+extension );
+  String path = sketchPath( pathwaySoundEffects + quitButtonSound + extension ); //Absolute Path
+  //println ( path );
+  soundEffects1 = minim.loadFile( path );
   //playList1 = minim.loadFile( path );
+  //
+  
+  
   //Fonts from OS (Operating System)
   String[] fontList = PFont.list(); //To list all fonts available on OS
   printArray(fontList); //For listing all possible fonts to choose from, then createFont
@@ -44,6 +64,8 @@ void setup() {
   //bottomFont = createFont("", size); //Note: more than one font allowed
   // Tools / Create Font / Find Font / Use size field / Do not press "OK", known bug
   //
+  
+  
   //Population
   backgroundX = appWidth*0;
   backgroundY = appHeight*0;
@@ -64,22 +86,15 @@ void setup() {
   albumCover3Width = appWidth*30/170;
   albumCover3Height = appHeight*30/100;
   
-  playButtonX = appWidth*3.5/8;
-  playButtonY = appHeight*8/9;
-  playButtonWidth = appWidth*1/8;
-  playButtonHeight = appHeight*1/12;
   quitButtonX = appWidth*90/100;
   quitButtonY = appHeight*91/100;
   quitButtonWidth = appWidth*9/100;
   quitButtonHeight = appHeight*8/100;
   //Layout DIVs
   //rect(X, Y, Width, Height);
-  //rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-  int centerX = appWidth*1/2;
-  int centerY = appHeight*1/2;
-  //rect(centerX*1/2, centerY*1/2, appWidth*1/2, appHeight*1/2);
-  //rect(albumCoverX, albumCoverY, albumCoverWidth, albumCoverHeight);
-  //rect(playButtonX, playButtonY, playButtonWidth, playButtonHeight);
+  
+  
+  rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   rect(albumCover1X, albumCover1Y, albumCover1Width, albumCover1Height);
   rect(albumCover2X, albumCover2Y, albumCover2Width, albumCover2Height);
@@ -139,16 +154,31 @@ rect(albumCover1X, albumCover1Y, albumCover1Width, albumCover1Height);
 } //End draw
 //
 void keyPressed() { //Listener
-  if (key=='Q' || key=='q') exit();
-  if (key==CODED && keyCode==ESC) exit();
+  if (key=='Q' || key=='q')
+  {
+    soundEffects1.loop(0);
+    delay(2650); //Parameter: milliseconds
+    exit();
+  }
+  if (key==CODED && keyCode==ESC) //Hardcoded QUIT, no sound available
+  {
+    soundEffects1.loop(0);
+    delay(2650); //Parameter: milliseconds
+    exit();
+  }
   if (key=='W' || key=='w') ;
+  
+  //soundEffects1.loop(0);
+  
+  
 } //End keyPressed
 //
 void mousePressed() { //Listener
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight )
   {
+    soundEffects1.loop(0);
+    delay(2650); //Parameter: milliseconds
     exit();
   }
 } //End mousePressed
-//
 // End MAIN Program
