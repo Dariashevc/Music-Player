@@ -21,14 +21,10 @@ Boolean whiteMode=false;
 
 
 void setup() {
-  
-
   //size(400, 500); //width, height
   fullScreen(); //displayWidth, displayHeight
   appWidth = displayWidth;
   appHeight = displayHeight;
-  
-  
   //Landscape is HARDCODED
   String displayInstructions = ( appWidth >= appHeight ) ? "Good To Go" : "Bru, turn your phun";
   println(displayInstructions);
@@ -47,7 +43,6 @@ void draw() {
   quit ();
     drawRects ();
   println(mouseX, mouseY);
-
   //
 } //End draw
 //
