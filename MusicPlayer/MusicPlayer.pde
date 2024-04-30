@@ -40,7 +40,7 @@ void setup() {
 void draw() {
   background(backgroundColour);
   fill(foregroundColour);
-  quit ();
+  quitButton ();
     drawRects ();
   println(mouseX, mouseY);
   //

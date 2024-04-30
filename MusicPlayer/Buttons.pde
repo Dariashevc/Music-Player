@@ -1,4 +1,4 @@
-  void quit () {
+  void quitButton () {
     //Quit Button
   //fill(purple);
   //if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) fill(yellow);
