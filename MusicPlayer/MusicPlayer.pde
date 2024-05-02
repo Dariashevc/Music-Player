@@ -39,6 +39,7 @@ void setup() {
 //
 void draw() {
   background(backgroundColour);
+  image (backgroundImage, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
   fill(foregroundColour);
   quitButton ();
     drawRects ();
@@ -49,6 +50,8 @@ void draw() {
 void keyPressed() { //Listener
 keyButtons ();
 } 
+
+
 void mousePressed() { //Listener
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight )
   {

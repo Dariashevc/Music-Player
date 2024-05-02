@@ -18,8 +18,8 @@ void population () {
 //Population
   backgroundX = appWidth*0;
   backgroundY = appHeight*0;
-  backgroundWidth = appWidth;
-  backgroundHeight = appHeight;
+  backgroundWidth = appWidth-1;
+  backgroundHeight = appHeight-1;
   
   albumCover1X = appWidth*10/100; 
   albumCover1Y = appHeight*20/100;
