@@ -14,12 +14,17 @@ void setup() {
   backgroundImageWidth = appWidth-1;
   backgroundImageHeight = appHeight-1;
   //
-  String backgroundImageName = "waterimg";
-  String extension =".jpeg";
-  String pathway="../../../images/";
-  String landscape_portrait = "landscape_portrait/";
-  String path= pathway  +landscape_portrait + backgroundImageX + extension;
-  backgroundImage = loadImage("path");
+  String darthvader = "10-star-wars-darth-vader-portrait-wallpaper-1-325x485";
+  String bike = "bike";
+  String backgroundImageName = darthvader;
+  String extension = ".jpg";
+  String pathway = "../../../Images/";
+  String landscape_Square = "Landscape & Square Images/";
+  String portrait = "Portrait/";
+  //String path = pathway + landscape_Square + backgroundImageName + extension;
+  String path = pathway + portrait + backgroundImageName + extension;
+  backgroundImage = loadImage( path );
+  //
   //DIV
   rect(backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
 } //End setup
