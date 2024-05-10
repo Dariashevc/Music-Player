@@ -39,7 +39,6 @@ void setup() {
 //
 void draw() {
   background(backgroundColour);
-  image (backgroundImage, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
   fill(foregroundColour);
   quitButton ();
     drawRects ();
