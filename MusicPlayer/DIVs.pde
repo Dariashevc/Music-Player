@@ -1,10 +1,10 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
-float albumCover1X, albumCover1Y, albumCover1Width, albumCover1Height;
-float albumCover2X, albumCover2Y, albumCover2Width, albumCover2Height;
-float albumCover3X, albumCover3Y, albumCover3Width, albumCover3Height;
-float albumCover4X, albumCover4Y, albumCover4Width, albumCover4Height;
-float albumCover5X, albumCover5Y, albumCover5Width, albumCover5Height;
-float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+float albumCover1X, albumCover1Y, albumCover1Width, albumCover1Height, albumCover1WidthAdjusted, albumCover1HeightAdjusted;
+float albumCover2X, albumCover2Y, albumCover2Width, albumCover2Height, albumCover2WidthAdjusted, albumCover2HeightAdjusted;
+float albumCover3X, albumCover3Y, albumCover3Width, albumCover3Height, albumCover3WidthAdjusted, albumCover3HeightAdjusted;
+float albumCover4X, albumCover4Y, albumCover4Width, albumCover4Height, albumCover4WidthAdjusted, albumCover4HeightAdjusted;
+float albumCover5X, albumCover5Y, albumCover5Width, albumCover5Height, albumCover5WidthAdjusted, albumCover5HeightAdjusted;
+float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, albumCoverWidthAdjusted, albumCoverHeightAdjusted;
 
 void divs() {
     population ();
@@ -22,19 +22,29 @@ void population () {
   backgroundHeight = appHeight-1;
   
   albumCover1X = appWidth*10/100; 
-  albumCover1Y = appHeight*20/100;
+  albumCover1Y = appHeight*15/100;
   albumCover1Width = appWidth*30/170;
   albumCover1Height = appHeight*30/100; 
   
   albumCover2X = appWidth*40/100; 
-  albumCover2Y = appHeight*20/100;
+  albumCover2Y = appHeight*15/100;
   albumCover2Width = appWidth*30/170;
   albumCover2Height = appHeight*30/100;
   
   albumCover3X = appWidth*70/100; 
-  albumCover3Y = appHeight*20/100;
+  albumCover3Y = appHeight*15/100;
   albumCover3Width = appWidth*30/170;
   albumCover3Height = appHeight*30/100;
+  
+  albumCover4X= appWidth*10/100; 
+  albumCover4Y= appHeight*55/100;
+  albumCover4Width= appWidth*30/170;
+  albumCover4Height=appHeight*30/100;
+  
+  albumCover5X=appWidth*40/100; 
+  albumCover5Y=appHeight*55/100;
+  albumCover5Width=appWidth*30/170;
+  albumCover5Height=appHeight*30/100;
   
   quitButtonX = appWidth*90/100;
   quitButtonY = appHeight*91/100;
@@ -58,7 +68,7 @@ void population () {
 }
 
 void drawRects () {
-rect(albumCover1X, albumCover1Y, albumCover1Width, albumCover1Height);
+image( albumCoverImage1, albumCoverCENTERED, albumCover1Y, albumCover1WidthAdjusted, albumCover1HeightAdjusted );
   rect(albumCover2X, albumCover2Y, albumCover2Width, albumCover2Height);
   rect(albumCover3X, albumCover3Y, albumCover3Width, albumCover3Height);
   rect(albumCover4X, albumCover4Y, albumCover4Width, albumCover4Height);
