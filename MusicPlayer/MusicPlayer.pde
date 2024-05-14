@@ -18,8 +18,7 @@ color backgroundColour, darkBackground=0, whiteBackground=255; //Gray Scale, not
 color foregroundColour;
 color white=255, yellow=#FFFF00, black=0, purple=#FF00FF; //Hexidecimal, see Tools / Colour Selector
 Boolean whiteMode=false;
-PImage albumCoverImage1;
-float albumCoverRIGHT, albumCoverCENTERED, albumCoverLEFT;
+float songCoverRIGHT, songCoverCENTERED, songCoverLEFT;
 void setup() {
   //size(400, 500); //width, height
   fullScreen(); //displayWidth, displayHeight
@@ -31,42 +30,40 @@ void setup() {
   //
  audioPath ();
   font ();
-  String albumCover1 = "allmusic";
+  String songCover1 = "allmusic";
   String extensionJPG = ".jpg";
   String pathway = "../images/"; //Relative Pathway
-  String albumCoverImagePath = pathway + albumCover1 + extensionJPG;
-  albumCoverImage1 = loadImage( albumCoverImagePath );
-  float smallerAlbumCoverDimension = ( albumCover1Width < albumCover1Height ) ? albumCover1Width : albumCover1Height ;
+  String songCoverImagePath = pathway + songCover1 + extensionJPG;
+  songCoverImage1 = loadImage( songCoverImagePath );
+  float smallerAlbumCoverDimension = ( songCover1Width < songCover1Height ) ? songCover1Width : songCover1Height ;
   float albumCoverImageWidthPixel = 100.0; //Origonally INTs, ratio will be decimal
   float albumCoverImageHeightPixel = 100.0; //CAUTION: must avoid truncation to ZERO Value
   float albumCoverAspectRatio = albumCoverImageWidthPixel/albumCoverImageHeightPixel;
   float largerAlbumCoverDimension = smallerAlbumCoverDimension*albumCoverAspectRatio; //Apsect Ratio
-  if ( albumCover1Width < largerAlbumCoverDimension ) { //Image will not fit into DIV rect()
-    while ( albumCover1Width < largerAlbumCoverDimension ) {
+  if ( songCover1Width < largerAlbumCoverDimension ) { //Image will not fit into DIV rect()
+    while ( songCover1Width < largerAlbumCoverDimension ) {
       largerAlbumCoverDimension -= 1;
       smallerAlbumCoverDimension -= 1;
       //NOTE: ratios like percent are not linear decreases in both directions
     }
   }
-  albumCoverWidthAdjusted = largerAlbumCoverDimension;
-  albumCoverHeightAdjusted = smallerAlbumCoverDimension;
+  songCover1WidthAdjusted = largerAlbumCoverDimension;
+  songCover1HeightAdjusted = smallerAlbumCoverDimension;
    //
   /*Image can be centered, left justified, or right justified on the larger dimension
    LEFT: X-value of image same as rect()
    CENTERED: X-value of image = albumCoverX + (albumCoverWidth-albumCoverWidthAdjusted)/2;
    RIGHT: X-value of image = albumCoverX+albumCoverWidth-albumCoverWidthAdjusted;
    */
-  albumCoverRIGHT = albumCover1X;
-  albumCoverCENTERED = albumCover1X + (albumCover1Width-albumCoverWidthAdjusted)/2;
-  albumCoverLEFT =albumCover1X+albumCover1Width-albumCoverWidthAdjusted;
+  songCoverRIGHT = songCover1X;
+  songCoverCENTERED = songCover1X + (songCover1Width-songCover1WidthAdjusted)/2;
+  songCoverLEFT =songCover1X+songCover1Width-songCover1WidthAdjusted;
   divs();
   darkLightMode();
 } 
 
 //End setup
 //
-//  background(backgroundColour);
- // fill(foregroundColour);
 void draw() {
   quitButton ();
     drawRects ();
