@@ -7,8 +7,6 @@ void keyButtons () {
   {
     sound_effect_1 ();
   }
-  if (key=='W' || key=='w') ;
-  
   //soundEffects1.loop(0);
   
   
