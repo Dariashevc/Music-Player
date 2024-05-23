@@ -1,5 +1,4 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
-float backgroundImageDarkX, backgroundImageDarkY, backgroundImageDarkWidth, backgroundImageDarkHeight;
 float  songCover1X, songCover1Y, songCover1Width, songCover1Height, songCover1WidthAdjusted, songCover1HeightAdjusted;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, albumCoverWidthAdjusted, albumCoverHeightAdjusted;
 float songName1X, songNameY,songNameWidth,songNameHeight;
@@ -26,6 +25,11 @@ void population () {
   songCover1Width = appWidth*60/170;
   songCover1Height = appHeight*60/100; 
   
+  songName1X = appWidth*30/100; 
+  songNameY  = appHeight*68/100;
+  songNameWidth = appWidth*60/170;
+  songNameHeight  = appHeight*6/100; 
+  
   quitButtonX = appWidth*90/100;
   quitButtonY = appHeight*91/100;
   quitButtonWidth = appWidth*9/100;
@@ -45,6 +49,7 @@ void population () {
 }
 
 void drawRects () {
+  
 image( songCoverImage1, songCover1X, songCover1Y, songCover1Width, songCover1Height);
 }
 
