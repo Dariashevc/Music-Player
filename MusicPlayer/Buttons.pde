@@ -21,3 +21,6 @@
   fill(foregroundColour); //Resetting the Defaults
   }
   
+  void lightModeButton () {
+  
+  }

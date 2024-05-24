@@ -2,6 +2,7 @@ float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float  songCover1X, songCover1Y, songCover1Width, songCover1Height, songCover1WidthAdjusted, songCover1HeightAdjusted;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight, albumCoverWidthAdjusted, albumCoverHeightAdjusted;
 float songName1X, songNameY,songNameWidth,songNameHeight;
+float lightModeButtonX, lightModeButtonY, lightModeButtonWidth, lightModeButtonHeight;
 PFont songName1;
 PImage songCoverImage1;
 String name="Happy Together";
@@ -30,6 +31,11 @@ void population () {
   songNameWidth = appWidth*60/170;
   songNameHeight  = appHeight*6/100; 
   
+  lightModeButtonX =appWidth*91/100; 
+  lightModeButtonY =appHeight*2/100;
+  lightModeButtonWidth =appWidth*8/100; 
+  lightModeButtonHeight =appHeight*6/100;
+  
   quitButtonX = appWidth*90/100;
   quitButtonY = appHeight*91/100;
   quitButtonWidth = appWidth*9/100;
@@ -46,6 +52,7 @@ void population () {
   rect(quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight);
   rect(songCover1X, songCover1Y, songCover1Width, songCover1Height);
   rect (songName1X, songNameY,songNameWidth,songNameHeight);
+  rect (lightModeButtonX, lightModeButtonY, lightModeButtonWidth, lightModeButtonHeight);
 }
 
 void drawRects () {
