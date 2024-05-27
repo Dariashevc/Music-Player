@@ -56,7 +56,7 @@ void population () {
 }
 
 void drawRects () {
-  
+ 
 image( songCoverImage1, songCover1X, songCover1Y, songCover1Width, songCover1Height);
 }
 

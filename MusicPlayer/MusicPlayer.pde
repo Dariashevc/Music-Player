@@ -18,6 +18,7 @@ color backgroundColour, darkBackground=0, whiteBackground=255; //Gray Scale, not
 color foregroundColour;
 color white=255, yellow=#FFFF00, black=0, purple=#FF00FF; //Hexidecimal, see Tools / Colour Selector
 float songCoverRIGHT, songCoverCENTERED, songCoverLEFT;
+Boolean lightMode=false;
 void setup() {
   //size(400, 500); //width, height
   fullScreen(); //displayWidth, displayHeight
@@ -37,7 +38,6 @@ void setup() {
 //End setup
 //
 void draw() {
-  darkLightMode();
   quitButton ();
     drawRects ();
   println(mouseX, mouseY);
