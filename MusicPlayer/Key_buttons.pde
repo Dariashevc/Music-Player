@@ -8,6 +8,4 @@ void keyButtons () {
     sound_effect_1 ();
   }
   //soundEffects1.loop(0);
-  
-  
 }
