@@ -46,10 +46,11 @@ a {
 .main-container {
     padding-top: 64px; 
     padding-bottom: 64px;
-    display:inline-block;
 }
 .img-music-players {
     border-radius: 32px;
+    display: flex;
+    justify-content: center;
 }
 .music-player-list-item-text {
     font-size: 45px;
