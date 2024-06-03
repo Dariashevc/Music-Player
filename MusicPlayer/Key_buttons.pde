@@ -7,5 +7,9 @@ void keyButtons () {
   {
     sound_effect_1 ();
   }
+  if ( key=='M' || key=='m')
+  {
+   darkLightMode();
+  };
   //soundEffects1.loop(0);
 }

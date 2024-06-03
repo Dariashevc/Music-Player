@@ -11,7 +11,9 @@ void darkLightMode() {
 void darkLightModeDraw() {
    if ( lightMode == true ) { //Boolean keyBind, Logical Shortcut
     fill(white); 
+    fill(foregroundColour);
   }
   else if ( lightMode == false ) {
     fill(black);}
+    fill(foregroundColour);
 }
