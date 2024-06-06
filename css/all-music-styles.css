@@ -7,7 +7,6 @@ main {
     font-family: "Fredoka", sans-serif;
   font-weight: 500;
   font-style: normal;
-    font-size: 32px;
 }
 a 
 {
@@ -47,12 +46,16 @@ a
     padding-top: 64px; 
     padding-bottom: 64px;
 }
+.section-img {
+    display:grid;
+    justify-content: center;
+
+}
 .img-music-players {
-    padding-left: 120px;
-    border-radius: 200px;
+    border-radius: 100%;
 }
 .music-player-list-item-text {
-    font-size: 45px;
+    font-size: 40px;
     color: #b3ccff;
     text-align:center;
     margin-top: 10px;
@@ -61,11 +64,9 @@ a
 .music {
     margin-top: 64px;
 }
-.song-list-item {
+.song-list-item-container {
     background-color: #4664a1;
-    display: inline-flex;
-    max-width: 1120px;
-    
+    display: flex;
 }
 .footer-container {
     padding-top: 32px;
