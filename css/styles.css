@@ -8,7 +8,7 @@ main {
   font-weight: 500;
   font-style: normal;
   font-variation-settings:"wdth" 87.5;
-    font-size: 32px;
+    font-size: 28px;
 }
 a {
     text-decoration: none;
@@ -30,37 +30,35 @@ a {
         font-family: "Odibee Sans", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 64px;
+        font-size: 65px;
         text-transform: uppercase;
         background-color: #0b1b3b;
-        padding-top: 16px;
-        padding-bottom: 12px;
-        box-shadow: 20px 20px 50px 15px #377aff72;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        box-shadow: 21px 21px 55px 15px #377aff72;
         container: normal;
         display: flex;
         flex-direction: row;
     }
 .logo {
     color: #4b6cad;
-    margin-left: 140px;
+    margin-left: 120px;
 }
 
 .main-container {
-    padding-top: 32px; 
-    padding-bottom: 32px;
+    padding-top: 65px; 
+    padding-bottom: 65px;
 }
 .music-player-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 64px;
-    row-gap: 64px;
-    margin-left: 124px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    column-gap: 65px;
+    row-gap: 65px;
+    margin-left: 125px;
 }
 .music-player-list-item {
-    border-radius: 25px;
-    padding: 16px;
+    border-radius: 10%;
+    padding: 15px;
 }
 .music-player-list-item:hover {
     animation-name: example;
@@ -72,7 +70,7 @@ a {
     to {background-color: #4565a472;}
   }
 .img-music-players {
-    border-radius: 16px;
+    border-radius: 10%;
     display: block;
 }
 .music-player-list-item-text {

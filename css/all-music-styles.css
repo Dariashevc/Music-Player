@@ -54,6 +54,32 @@ a
 .img-music-players {
     border-radius: 100%;
 }
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    justify-content: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+.snuffle-play {
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+.play {
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;  
+}
+.other-buttons {
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
 .music-player-list-item-text {
     font-size: 40px;
     color: #b3ccff;
@@ -61,13 +87,29 @@ a
     margin-top: 10px;
     margin-bottom: 0;
 }
-.music {
-    margin-top: 64px;
-}
 .song-list-item-container {
     background-color: #4664a1;
     display: flex;
 }
+.song-img {
+    margin: 6px;
+    margin-left: 21px;
+    border-radius: 10%;
+}
+.all-songs-list {
+    display: flex;
+    flex-direction: column;
+}
+.song-name {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+
+
 .footer-container {
     padding-top: 32px;
     padding-bottom: 32px;
