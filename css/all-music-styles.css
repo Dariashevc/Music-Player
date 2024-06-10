@@ -53,6 +53,8 @@ a
 }
 .img-music-players {
     border-radius: 100%;
+    width:330px;
+     height:330px;
 }
 
 .buttons {
@@ -95,6 +97,8 @@ a
     margin: 6px;
     margin-left: 21px;
     border-radius: 10%;
+    width: 55px;
+    height: 55px;
 }
 .all-songs-list {
     display: flex;
@@ -104,10 +108,17 @@ a
     font-size: 21px;
     font-weight: 500;
     margin: 0;
-    margin-top: 18px;
+    margin-top: 20px;
     margin-left: 10px;
 }
-
+.song-artist {
+    display: flex;
+    font-size: 21px;
+        font-weight: 300;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+}
 
 
 .footer-container {
