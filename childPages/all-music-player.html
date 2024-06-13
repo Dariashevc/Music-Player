@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@87.5,500&family=Odibee+Sans&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth@87.5" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <script src="../script.js"></script>
@@ -25,6 +25,13 @@
 </header>
 <main>
     <div class="music-container">
+
+        <audio src="../Audio/music/TheTurtles-SoHappyTogether.mp3" id="audio"></audio>
+
+        <div class="img-container">
+            <img src="../images/Turtleshappytogether.jpg" alt="music-cover">
+        </div>
+
         <div class="music-info">
             <h4 id="title">Happy Together</h4>
             <div class="progress-container">
@@ -33,14 +40,23 @@
                 </div>
             </div>
         </div>
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
 
-        <div class="img-container">
-            <img src="../images/Turtleshappytogether.jpg" alt="music-cover" id="cover">
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
         </div>
-
-        <audio src="../Audio/music/TheTurtles-SoHappyTogether.mp3" id="audio"></audio>
-
     </div>
 </main>
+<footer class="footer-container">
+
+</footer>
 </body>
 </html>
