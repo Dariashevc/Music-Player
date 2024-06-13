@@ -7,10 +7,9 @@ main {
     font-family: "Fredoka", sans-serif;
   font-weight: 500;
   font-style: normal;
-    font-size: 32px;
+    font-size: 36px;
 }
-a 
-{
+a {
     text-decoration: none;
     }
     
@@ -27,46 +26,113 @@ a
     }
 
     .header-container {
-        font-family: "Odibee Sans", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 64px;
-        text-transform: uppercase;
         background-color: #0b1b3b;
-        padding-top: 16px;
-        padding-bottom: 12px;
-        box-shadow: 20px 20px 50px 15px #377aff72;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        box-shadow: 21px 21px 55px 15px #377aff72;
         container: normal;
+        display: flex;
+        flex-direction: row;
     }
 .logo {
+            font-family: "Odibee Sans", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 70px;
+                text-transform: uppercase;
     color: #4b6cad;
-    margin-left: 140px;
+    margin-left: 110px;
 }
 
 .main-container {
-    padding-top: 64px; 
-    padding-bottom: 64px;
+    padding-top: 70px; 
+    padding-bottom: 70px;
+}
+.section-img {
+    display:grid;
+    justify-content: center;
+
 }
 .img-music-players {
-    padding-left: 120px;
-    border-radius: 200px;
+    border-radius: 100%;
+    width:330px;
+     height:330px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    justify-content: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+.snuffle-play {
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+}
+.play {
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;  
+}
+.other-buttons {
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
 }
 .music-player-list-item-text {
-    font-size: 45px;
+    font-size: 40px;
     color: #b3ccff;
     text-align:center;
     margin-top: 10px;
     margin-bottom: 0;
 }
-.music {
-    margin-top: 64px;
-}
-.song-list-item {
+.song-list-item-container {
     background-color: #4664a1;
-    display: inline-flex;
-    max-width: 1120px;
-    
+    display: flex;
 }
+.song-list-item-container:hover {
+    animation-name: example;
+    animation-duration:  0.6s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes example {
+      from {background-color: #4664a1}
+      to {background-color: #6a89c7;}
+    }
+
+.song-img {
+    margin: 6px;
+    margin-left: 21px;
+    border-radius: 10%;
+    width: 55px;
+    height: 55px;
+}
+.all-songs-list {
+    display: flex;
+    flex-direction: column;
+}
+.song-name {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.song-artist {
+    display: flex;
+    font-size: 21px;
+        font-weight: 300;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+}
+
+
 .footer-container {
     padding-top: 32px;
     padding-bottom: 32px;
