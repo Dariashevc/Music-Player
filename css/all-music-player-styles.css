@@ -47,6 +47,11 @@ ul {
     padding-bottom: 70px;
     align-items: center;
 }
+.music-cover {
+    width:330px;
+    height:330px;
+    border-radius: 15%;
+}
 .footer-container {
     padding-top: 32px;
     padding-bottom: 32px;
