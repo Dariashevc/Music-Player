@@ -19,10 +19,6 @@ ul {
     padding: 0;
 }
 
-img {
-    display: block;
-}
-
 
 .header-container {
     background-color: #0b1b3b;
@@ -44,7 +40,13 @@ img {
     margin-left: 110px;
 }
 
-
+.music-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px; 
+    padding-bottom: 70px;
+    align-items: center;
+}
 .footer-container {
     padding-top: 32px;
     padding-bottom: 32px;
