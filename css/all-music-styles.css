@@ -48,6 +48,12 @@ a {
     padding-top: 70px; 
     padding-bottom: 70px;
 }
+.album-and-music {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .section-img {
     display:grid;
     justify-content: center;
@@ -88,6 +94,45 @@ a {
       to {background-color: #6a89c7;}
     }
 
+.music-container {
+    background-color: #6a89c7;
+    padding: 21px;
+    border-radius: 10%;
+    margin-left: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-cover {
+    width: 220px;
+    height: 220px;
+    border-radius: 15%;
+}
+.music-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+.artist-title {
+font-size: 21px;
+    font-weight: 500;
+    margin: 0;
+}
+.action-btn {
+    background-color: #6a89c7;
+    border: 0;
+    color: #dfdbdf;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.action-btn.action-btn-big {
+    color: #dfdbdf;
+    font-size: 30px;
+}
 .song-img {
     margin: 6px;
     margin-left: 21px;
@@ -107,12 +152,15 @@ a {
     margin-left: 10px;
 }
 .song-artist {
+
     display: flex;
-    font-size: 21px;
+    text-align: center;
+    font-size: 15px;
         font-weight: 300;
         margin: 0;
-        margin-top: 20px;
-        margin-left: 10px;
+        margin-top: 25px;
+        margin-left: 55px;
+        color: #0b1b3bef;
 }
 
 
@@ -121,3 +169,4 @@ a {
     padding-bottom: 32px;
     background-color: #0b1b3b;
 }
+
