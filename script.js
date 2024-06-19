@@ -12,3 +12,4 @@ const durTime = document.querySelector('#durTime');
 
 // Song titles
 const songs = ['Happy Together', 'Lost In Paradise', 'While You Wait For The Others'];
+
