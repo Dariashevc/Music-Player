@@ -113,20 +113,17 @@ a {
     font-size: 28px;
     font-weight: 600;
     margin: 10px 0 0 0;
-}
-.artist-title {
-font-size: 21px;
-    font-weight: 500;
-    margin: 0;
+    text-align: center;
 }
 .progress-container {
     background: #fff;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0;
     height: 4px;
-    width: 100%;
+    min-width:220px;
     margin-top: 36px;
+    margin-bottom: 10px;
+    
 }
 
 .progress {
