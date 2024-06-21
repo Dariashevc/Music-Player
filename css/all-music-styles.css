@@ -83,6 +83,7 @@ a {
 .song-list-item-container {
     background-color: #4664a1;
     display: flex;
+    cursor: pointer;
 }
 .song-list-item-container:hover {
     animation-name: example;
