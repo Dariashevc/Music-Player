@@ -91,3 +91,6 @@ function setProgress(e) {
 }
 progressContainer.addEventListener('click', setProgress);
 
+  // Song ends
+audio.addEventListener('ended', nextSong);
+
