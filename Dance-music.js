@@ -9,8 +9,7 @@ const title = document.querySelector('#title');
 const cover = document.querySelector('#cover');
 const listSong =document.querySelector('#listSong');
 
-const songs = ['Happy Together', 'Snap Out Of It', 'While You Wait For The Others', 'The Sweet Escape', 'Lost In Paradise', 'Everyone Adores You At Least I Do',
-	'Nobody', 'Good Old-Fashioned Lover Boy', 'Hidden In The Sand', 'The Blonde'];
+const songs = ['The Sweet Escape', 'Lost In Paradise'];
 
 let songIndex = 0;
 
